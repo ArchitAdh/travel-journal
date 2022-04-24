@@ -2,7 +2,92 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Inter;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
+  max-width: 800px;
+  margin: 10px auto;
+  background: #fff;
+}
+
+.container-inner {
+  margin-inline: 40px;
+  color: #2b283a;
+  font-size: 10.5px;
+}
+
+.header {
+  background: #f55a5a;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.header-logo {
+  width: 24px;
+  margin-right: 7px;
+}
+
+.location-card {
+  padding-block: 18px;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+}
+
+.location-details {
+  padding-left: 19px;
+}
+
+.location-landmark {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  padding-right: 4px;
+}
+
+.location-country {
+  padding-right: 12px;
+  text-transform: uppercase;
+}
+
+.location-url {
+  color: #918e9b;
+}
+
+.location-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  padding-bottom: 7px;
+}
+
+.date {
+  font-weight: 700;
+  padding-bottom: 9px;
+}
+
+.description {
+  max-width: 283px;
+  line-height: 15px;
 }

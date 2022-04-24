@@ -2,11 +2,12 @@ import React from "react";
 import "./App.css";
 import LocationCard from "./components/LocationCard";
 import data from "./data";
+import logo from "./img/logo.png";
 const App = () => {
   const locationData = data.map((item) => {
     return (
       <LocationCard
-        id={item.title}
+        key={item.title}
         country={item.location}
         title={item.title}
         img={item.imageUrl}
@@ -19,9 +20,10 @@ const App = () => {
   return (
     <div className="container">
       <header className="header">
+        <img className="header-logo" src={logo} alt="logo" />
         <h1>my travel journal.</h1>
       </header>
-      {locationData}
+      <div className="container-inner">{locationData}</div>
     </div>
   );
 };
